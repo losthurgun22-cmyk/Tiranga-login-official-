@@ -1,17 +1,45 @@
-<input type="text" id="user" placeholder="Username">
-<input type="password" id="pass" placeholder="Password">
-<button onclick="login()">Login</button>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiranga Home</title>
+    <style>
+        body { background-color: #2b3270; color: white; font-family: Arial, sans-serif; margin: 0; padding-bottom: 80px; }
+        .header { background-color: #3c448a; padding: 15px; display: flex; align-items: center; justify-content: space-between; }
+        .balance-section { background-color: #1e2450; margin: 15px; padding: 20px; border-radius: 12px; text-align: center; }
+        .wallet-amount { font-size: 28px; font-weight: bold; color: #ffffff; margin: 10px 0; }
+        .grid-container { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; padding: 15px; }
+        .game-card { background: linear-gradient(180deg, #3c448a, #2b3270); border-radius: 15px; padding: 20px; text-align: center; border: 1px solid #4a54a4; font-size: 18px; }
+        .bottom-menu { position: fixed; bottom: 0; width: 100%; background: #1e2450; display: flex; justify-content: space-around; padding: 15px 0; border-top: 1px solid #3c448a; }
+        .menu-item { text-align: center; font-size: 14px; color: #8e94c1; text-decoration: none; }
+    </style>
+</head>
+<body>
+<div class="header">
+    <div style="font-weight: bold;">MEMBERNNGNEKCM</div>
+    <div style="background: silver; color: black; padding: 2px 8px; border-radius: 5px; font-size: 12px;">VIP0</div>
+</div>
+<div class="balance-section">
+    <div style="opacity: 0.8;">Total balance</div>
+    <div class="wallet-amount">₹30.02</div>
+    <div style="display: flex; justify-content: space-around; margin-top: 10px;">
+        <span style="color: #4db8ff;">Deposit</span>
+        <span style="color: #4db8ff;">Withdraw</span>
+    </div>
+</div>
+<div class="grid-container">
+    <div class="game-card">🏆<br>Lottery</div>
+    <div class="game-card">🎰<br>Slots</div>
+    <div class="game-card">🃏<br>Casino</div>
+    <div class="game-card">⚽<br>Sports</div>
+</div>
+<div class="bottom-menu">
+    <a href="#" class="menu-item" style="color: #4db8ff;">🏠<br>Home</a>
+    <a href="#" class="menu-item">📊<br>Activity</a>
+    <a href="#" class="menu-item">🎁<br>Promotion</a>
+    <a href="#" class="menu-item">👤<br>Account</a>
+</div>
+</body>
+</html>
 
-<script>
-function login(){
-  let u = document.getElementById("user").value;
-  let p = document.getElementById("pass").value;
-
-  if(u=="admin" && p=="1234"){
-    alert("Login Success");
-    window.location="game.html";
-  } else {
-    alert("Wrong ID Password");
-  }
-}
-</script>
